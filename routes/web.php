@@ -2,6 +2,7 @@
 
 // use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,7 +26,5 @@ Route::delete('/task/{task}', [App\Http\Controllers\TaskController::class, 'dest
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
