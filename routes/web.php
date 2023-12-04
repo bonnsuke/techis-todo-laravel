@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Auth;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/tasks');
 });
 
 Route::get('/tasks', [App\Http\Controllers\TaskController::class, 'index'])->name('tasks');
